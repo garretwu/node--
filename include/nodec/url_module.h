@@ -1,16 +1,18 @@
 #ifndef _NODEC_URL_MODULE_H_
 #define _NODEC_URL_MODULE_H_
 
-#include "module.h"
+#include "singleton.h"
 #include "string.h"
 #include "url.h"
 
 namespace nodec {
 
-class URLModule : public Module {
+class UrlModule : public Singleton<UrlModule> {
+    SINGLETON_CONSTRUCTOR(UrlModule);
+
 public:
-    URL* parse(const String&, bool, bool);
-    String format(const URL&);
+    Url* parse(const String&, bool, bool);
+    String format(const Url&);
     
     // TODO: resolve
 };

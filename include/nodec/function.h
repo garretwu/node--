@@ -1,7 +1,8 @@
 #ifndef _NODEC_FUNCTION_H_
 #define _NODEC_FUNCTION_H_
 
-#include "object.h"
+#include "value.h"
+#include "array.h"
 
 namespace nodec {
 

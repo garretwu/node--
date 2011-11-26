@@ -1,7 +1,7 @@
-#ifndef _NODEC_HTTP_MODULE_H_
-#define _NODEC_HTTP_MODULE_H_
+#ifndef _NODEC_SERVER_H_
+#define _NODEC_SERVER_H_
 
-#include "module.h"
+#include "value.h"
 #include "string.h"
 #include "url.h"
 
@@ -16,4 +16,4 @@ public:
 
 }
 
-#endif // _NODEC_HTTP_MODULE_H_
+#endif // _NODEC_SERVER_H_

@@ -1,15 +1,14 @@
-#ifndef _NODEC_MODULE_H_
-#define _NODEC_MODULE_H_
+#ifndef _NODEC_STRING_H_
+#define _NODEC_STRING_H_
 
 #include "object.h"
 
 namespace nodec {
 
 class String : public Object {
-// use 16bit char array
-// immutable object
+// immutable
 };
 
 }
 
-#endif // _NODEC_MODULE_H_
+#endif // _NODEC_STRING_H_

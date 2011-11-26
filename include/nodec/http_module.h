@@ -1,13 +1,15 @@
 #ifndef _NODEC_HTTP_MODULE_H_
 #define _NODEC_HTTP_MODULE_H_
 
-#include "module.h"
-#include "string.h"
-#include "url.h"
+#include "singleton.h"
+#include "server.h"
 
 namespace nodec {
 
-class HTTPModule : public Module {
+class HttpModule : public Singleton<HttpModule> {
+    SINGLETON_CONSTRUCTOR(HttpModule);
+
+public:
     Server* createServer();
 };
 

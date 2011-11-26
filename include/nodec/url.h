@@ -5,7 +5,7 @@
 
 namespace nodec {
 
-class URL : public Object {
+class Url : public Object {
 public:
     String getHref();
     String getProtocol();
